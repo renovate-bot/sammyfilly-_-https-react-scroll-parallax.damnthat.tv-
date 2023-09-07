@@ -1,0 +1,64 @@
+README
+
+MIT license
+
+
+
+
+React Scroll Parallax
+
+NPM Version Latest NPM Downloads Codecov Rate on Openbase
+
+Test and Lint Storybook Storybook
+
+React hooks and components to create parallax scroll effects for banners, images or any other DOM elements. Utilizes Parallax Controller to add vertical or horizontal scrolling based effects to elements. Optimized to reduce jank on scroll and works with SSR and SSG rendered React apps.
+
+If you're coming from V2, here's a migration guide.
+
+Install
+
+With npm
+
+npm install react-scroll-parallax
+or yarn
+
+yarn add react-scroll-parallax
+Example
+
+Create effects with a hook:
+
+function Component() {
+  const parallax = useParallax({
+    speed: -10,
+  });
+  return <div ref={parallax.ref} />;
+}
+or with a component:
+
+function Component() {
+  return (
+    <Parallax speed={-10}>
+      <div />
+    </Parallax>
+  );
+}
+Getting Started
+
+Read the documentation for setup and usage instructions.
+
+Usage
+How it works
+Demos
+
+Storybook v3 - Source Code
+Demo 1 - Source Code
+Demo 2 - Source Code (old 2.x version)
+Docs: Hooks
+
+useParallax()
+useParallaxController()
+Docs: Components
+
+<Parallax>
+<ParallaxBanner>
+<ParallaxProvider>
